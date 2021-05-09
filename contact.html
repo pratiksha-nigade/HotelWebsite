@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order page</title>
+
+            
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/style.css"> 
+<link href="main.html">
+
+
+<script>
+    function add(){
+        alert("Thank You For Order");
+    }
+</script>
+
+<style>
+
+
+
+
+
+
+    #menubar{
+        color:black;
+    }
+    #addtxt,#nametxt,#menu{
+        height: 50px;
+         width:275px;
+         color:black;
+         font-size: 15px;
+         font-weight: bold;
+    }
+    #name,#add,#makeorder{
+        font-size: 25px;
+        color:rgba(14, 11, 11, 0.767);
+        text-align: left;
+    }
+
+   
+
+.order{
+    background-image: url('imgs/12.jpeg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: fixed;
+    background-position:center center ;
+    color: #000;
+}
+
+#ord
+{
+    padding:50px;
+    margin:20px;
+    position:absolute;
+}
+.btn-lg{
+    margin-left: 75px;
+    margin-top: 20px;
+    width: 200px;;
+}
+
+
+ .nav-item .nav-link{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    margin:5px;
+}
+
+ul li:hover{
+               background:rgba(64, 224, 208, 0.76);
+}
+
+#logo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+#logo:hover{
+    
+        box-shadow: 0 0 5px 2px rgb(68, 189, 236); 
+        border: 1px solid rgba(121, 184, 235, 0.562);
+
+
+} 
+#searchbox{
+    width: 300px;
+    height: 35px;
+    font-size: large;
+}
+#buttons{
+    width: 65px;
+    height: 35px;
+}
+.dropdown-item{
+    font-size: large;
+    font-weight: bold;
+}
+</style>
+
+    
+
+    
+    </head>
+
+    <body class="order" id="ordernow">
+
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+         <a href="" class="navbar-brand" id="logo">Dinner<br> Club</a>
+                
+          <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#Mylink">
+               <span class="navbar-toggler-icon"></span>
+           </button>-->
+
+           <div class="collapse navbar-collapse" id="Mylink">
+            
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="main.html" class="nav-link">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Specialities</a>
+
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Cakes</a>
+                        <a href="#" class="dropdown-item">Cookies</a>
+                          <a href="#" class="dropdown-item">Veg</a>
+                        </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+
+               <form class="form-inline" action="">
+
+                <input type="search" class="form-control mr-sm-2" id="searchbox" placeholder="Search">
+                <button type="button" class="btn btn-outline-success my-2 my-sm-0" id="buttons">Search</button>
+               </form>
+
+
+           </div>
+
+        </div>
+        
+ 
+     
+       
+        
+
+
+
+    
+        <div class="container" id="ord">      
+              <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              
+                <form style="background-color: rgba(247, 122, 180, 0.699); background-attachment: fixed; width: 500px; height:510px; margin-top:200px;" class="centered"  >
+                  <br>  <h1 style="text-align: center; color:rgb(15, 14, 14); font-size:30px;font-family:'Times New Roman', Times, serif; font-weight: bolder;">Order Now</h1>
+       <label id="name" >Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="nametxt" />
+       <label id="add">Address :&nbsp;</label><input type="text-area" id="addtxt" />
+       <label id="add">Phone No:</label><input type="text-area" id="addtxt" />
+       <label id="makeorder">Your Order:
+       <select name="Menu" id="menu">
+         <option value="vol">cake</option>
+         <option value="saab">cookies</option>
+         <option value="opel">dinner</option>
+         <option value="audi">freakfast</option>
+       </select></label>
+      
+ <button type="button" class="btn btn-lg btn-primary badge-pill " onclick="add()">Make Order</button>
+    
+
+            
+      
+    </form>
+ 
+        
+        </div>
+
+        </div>
+    </body>
+</html>
